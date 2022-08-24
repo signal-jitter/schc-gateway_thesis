@@ -1,0 +1,33 @@
+{
+    "enable_sim_lpwa": true,
+    "bind_addr": "localhost",
+    "bind_port": 51225,
+    "downlink_url": "http://localhost:8080",
+    "ssl_verify": false,
+    "my_cert": "gateway-cert.pem",
+    "rule_config": [
+        { "rule_file": "rule-abc.json", "devL2Addr": "ABC00001" },
+        { "rule_file": "rule-def.json", "devL2Addr": "DEF00001" }
+    ],
+    "route": {
+        "2a05:d014:faa:5500:6ff9:8389:cf03:f3c1": { "ifname": "ens192", "dst": "00:50:56:28:7d:a3" },
+        "2a01:238:4250:6300:b714:8263:e07a:ee3": { "ifname": "ens192", "dst": "00:50:56:28:7d:a3" },
+        "2001:8d8:1801:84dd::1": { "ifname": "lo", "dst": "" },
+        "2001:8d8:1801:84dd::2": { "ifname": "lo", "dst": "" },
+        "2001:8d8:1801:84dd::3": { "ifname": "lo", "dst": "" },
+        "2001:8d8:1801:84dd:51d7:bc91:4fb5:477": { "ifname": "lpwan", "dst": "ABC00001" },
+        "2001:8d8:1801:84dd:d011:1cc1:c483:adc9": { "ifname": "lpwan", "dst": "DEF00001" }
+    },
+    "interface": {
+        "lo": { "addr": "" },
+        "ens192": { "addr": "00:50:56:28:7d:a3" }
+    }
+}
+
+
+
+
+
+
+
+

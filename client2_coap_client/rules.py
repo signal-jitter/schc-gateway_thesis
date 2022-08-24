@@ -1,0 +1,26 @@
+RULE_COAP = {\
+             "ruleid"  : 100,
+             "content" : [["IPv6.version", 1, "bi", 6, "equal", "not-sent"],
+                          ["IPv6.trafficClass", 1, "bi", 0x00, "equal", "not-sent"],
+                          ["IPv6.flowLabel", 1, "bi", 0x000000, "ignore", "not-sent"],
+                          ["IPv6.payloadLength", 1, "bi", None, "ignore", "compute-length"],
+                          ["IPv6.nextHeader", 1, "bi", 17, "equal", "not-sent"],
+                          ["IPv6.hopLimit", 1, "bi", 40, "ignore", "not-sent"],
+                          ["IPv6.prefixES", 1, "bi", 0x200108d8180184dd, "equal", "not-sent"],
+                          ["IPv6.iidES", 1, "bi", None, "ignore", "value-sent"],
+                          ["IPv6.prefixLA", 1, "bi", 0x2a05d0140faa5500, "equal", "not-sent"],
+                          ["IPv6.iidLA", 1, "bi", 0x6ff98389cf03f3c1, "equal", "not-sent"],
+                          ["UDP.PortES", 1, "bi", 5683, "equal", "not-sent"],
+                          ["UDP.PortLA", 1, "bi", 5683, "equal", "not-sent"],
+                          ["UDP.length", 1, "bi", None, "ignore", "compute-length"],
+                          ["UDP.checksum", 1, "bi", None, "ignore", "compute-checksum"],
+                          ["CoAP.version", 1, "bi", 1, "equal", "not-sent"],
+                          ["CoAP.type", 1, "bi", 0, "equal", "not-sent"],
+                          ["CoAP.tokenLength", 1, "bi", 1, "equal", "not-sent"],
+                          ["CoAP.code", 1, "bi", 2, "equal", "not-sent"],
+                          ["CoAP.messageID", 1, "bi", 1, "MSB(4)", "LSB"],
+                          ["CoAP.token", 1, "bi", 0x82, "equal", "not-sent"],
+                          ["CoAP.Uri-Path", 1, "up", "basic", "equal", "not-sent"],
+                          ["CoAP.Option-End", 1, "up", 0xFF, "equal", "not-sent"]
+                         ]
+                    }
