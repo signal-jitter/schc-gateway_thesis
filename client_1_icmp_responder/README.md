@@ -10,7 +10,7 @@ Darüberhinaus wurde in diesem Beispiel in der Library auch die Fähigkeit zum (
 
 
 
-#Setup
+# Setup
 Verwendet wird ein Pycom LoPy auf einem Pysense Shield.
 
 Bei Betätigung eines Buttons (Lopy Pin - D10 - wurde verwendet) wird eine CoAP Nachricht mit der aktuellen Temperatur eines Sensor (SI7006A20) generiert. Auch eine CoAP-Server Adresse und ein Port werden schon als Ziel in dem IP Paket definiert.
@@ -24,7 +24,7 @@ grün = erfolgreich verbunden
 blau = sendet Nachricht nach Knopfdruck an LNS
 
 
-#CoAP Server
+# CoAP Server
 Im Rahmen dieses Versuchaufbaus wurde auch ein eigener leichtgewichtiger open-source CoAP-Server auf einem weiteren entfernten V-Server ausgesetzt.
 Genutzt wurde: https://github.com/Tanganelli/CoAPthon3
 
@@ -34,7 +34,7 @@ Aufruf zum starten :\
 sudo python3 coapserver.py -i  {eigene Server-IP}
 ```
 
-##Test
+## Test
 Eine erfolgreiche Kommunikation zeigt eine Ausgabe an dem CoAP Server mit der aktuellen Temperatur (hier: 38,7 °C):
 ```
 From ('2001::[..snap..]:477', 5683), To None, CON-31, POST-30, [Uri-Path: basic, ] 38.78991...8 bytes

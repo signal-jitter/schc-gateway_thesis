@@ -7,7 +7,7 @@ Auch die Portierung der RuleID als LoRa-Port wurde hier implementiert (Änderung
 
 *Hinweis: Erklärungen des Programms befinden sich in Kommentaren im Code*
 
-#Setup
+# Setup
 Verwendet wird ein Pycom FiPy auf einem Pytrack Shield.
 
 Ein aus dem Internet eingehende ICMP-Request, welcher an eine IP eines LoRa Gerätes gerichtet ist, erkennt der WanRouter und leitet diese an das Gateway weiter.
@@ -20,7 +20,7 @@ Auf dem selben Weg kommt die Nachricht dekomprimiert bei dem SCHC Gateway an, wo
 **Die blaue LED signalisiert die Bearbeitung/Beantwortung eines Request-Paketes**
 
 
-##Test
+## Test
 Aufruf eines Ping Befehls unter Windows (vgl. Linux ping6)
 ```
 ping 2001:8d8:[...snap...]:adc9 -n 1 -l 0

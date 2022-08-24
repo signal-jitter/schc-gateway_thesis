@@ -5,7 +5,7 @@ https://github.com/gotthardp/lorawan-server
 
 
 
-#Setup
+# Setup
 Der LNS muss an das gewünschte Szenario angepasst werden.
 - Geräte vorkonfiguriert (für ABP - authentication by personalisation)
 - Adaptiv Data Rate
@@ -13,7 +13,7 @@ Der LNS muss an das gewünschte Szenario angepasst werden.
 
 
 
-#Backend
+# Backend
 Das Backend des Servers ist die Schnittstelle zu dem SCHC Gateway.
 Hier wurden eigene Handler und Connectoren erstellt.
 
