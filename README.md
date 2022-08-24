@@ -3,18 +3,18 @@ IPv6 über LoRaWAN
 
 Implementierung eines Gesamtsystems zur Übertragung von IPv6 Paketen über LoRa-Endgeräte.
 
-##Konzept
+#Konzept
 Lora Endgeräte sind an ein LoRaWAN Netzwerk angebunden.
 Sämtliche Up- und Downlink Nachrichten werden von dem Lora-Network-Server(LNS) an ein Backend übermittelt.
 Dieses Backend dient als Gateway zwischen der LoRa-Kommunikation und der ein und ausgehenden IPv6 Kommunikation.
 Da generische IPv6 Pakete aufgrund ihrer Größe für LPWANS wie LoRaWAN ungeeignet sind, wird das Static-Context-Header-Compression Verfahren (SCHC) verwendet, um die IP-Pakete zu komprimieren und/ oder zu fragmentieren.
 
 
-##Architektur
+#Architektur
 ![Alt text](architektur2.png?raw=true "Architektur")
 
 
-##Implementierung
+#Implementierung
 
 Umgesetzt in diesem Projekt wurden:
 
@@ -65,5 +65,22 @@ Um die ICMP Nachrichten an das LoRa Gerät "durchzuschleusen" wurde das entsprec
 *(net.ipv6.icmp.echo_ignore_all)*
 
 
+#Setup - Kofiguration
+*weiterführende Infos in den jeweiligen READMEs der Ordner*
 
+###Nodes:
+FiPy und LoPy der Firma Pycom (Micropython)
+
+###Gateway
+PyGate der Firma Pycom (Micropython) - Konfiguaration wie angegeben (LNS IP anpassen)
+
+###LNS
+uplink (LNS --> Gateway)
+- json {addr, data, port} to localhost:51225/ul
+
+downlink (Inet --> Gateway)
+- REST API - post to localhost:51225/dl
+
+downlink (Gateway --> LNS)
+- REST API - post to localhost:8080/in/{devaddr}
 
