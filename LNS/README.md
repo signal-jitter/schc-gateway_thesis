@@ -2,13 +2,15 @@ LoRaWAN Netzwerkserver
 ===================
 Verwendet wurde der Open-Source LoRaWAN-Netzwerk und Applikations-Server von Petr Gotthard\
 https://github.com/gotthardp/lorawan-server
+\
 
 
 
 # Setup
-Der LNS muss an das gewünschte Szenario angepasst werden.
+Das Setup das LNS muss für jeden Aufbau separat vorgenommen werden
 - Geräte vorkonfiguriert (für ABP - authentication by personalisation)
-- Adaptiv Data Rate
+- gewünschte Eigenschaften
+- Adaptiv Data Rate\
 ...
 
 
@@ -41,6 +43,9 @@ Format          = JSON
 URI             = http:
 Received Topic  = /in/{devaddr}
 ```
-
-
+\
+\
+\
+Der LNS zeigt in einem GUI die Ein-/ Ausgehenden Pakete:
+![](Dashboard des LNS.png)
 

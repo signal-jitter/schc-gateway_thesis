@@ -39,3 +39,7 @@ Eine erfolgreiche Kommunikation zeigt eine Ausgabe an dem CoAP-Server mit der ak
 ```
 From ('2001::[..snap..]:477', 5683), To None, CON-31, POST-30, [Uri-Path: basic, ] 38.78991...8 bytes
 ```
+
+## Ablauf
+
+![](ICMP-Echo Ablauf.png)

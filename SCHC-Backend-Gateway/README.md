@@ -32,6 +32,9 @@ der von mir ermittelte Programmfluss des SCHC-Gateways:
 - downlink (Gateway --> LNS)\
 ```REST API - post to localhost:8080/in/{devaddr}```
 
+![](uebergabeschnittstellen.png)
+
+
 # Setup
 die Ordner müssen zu dem Systempfad hinzugefügt werden:
 

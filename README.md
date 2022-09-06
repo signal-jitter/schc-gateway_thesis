@@ -55,16 +55,20 @@ Um die Anforderungen dieses Projektes zu erfüllen, wurde es angepasst und verä
 
 *(eine genaue Erläuterung aller Anpassungen befindet sich in der Dokumentation)*
 
-### -Server
+### Server
 LNS und Gateway laufen gemeinsam auf einem V-Server bei IONOS.
 Für den Server steht ein ganzes 64er-IPv6-Subnetz zur Verfügung.
 
 IP-Adressen für die Nodes wurden nach TS010-1.0.0 (LoRa Alliance) berechnet und auf dem Server konfiguriert.
 
-Um die ICMP Nachrichten an das LoRa Gerät "durchzuschleusen" wurde das entsprechende Modul der Server Netzwerkschnittstelle deaktiviert\
-*(net.ipv6.icmp.echo_ignore_all)*
+Um die ICMP Nachrichten an das LoRa Gerät "durchzuschleusen" wurde das entsprechende Modul der Server Netzwerkschnittstelle deaktiviert 
+*(net.ipv6.icmp.echo_ignore_all)*.
 
 
+### Entwicklungsumgebung
+Die Anordnung in dem Entwicklungsaufbau war wie folgend:
+
+![](Entwicklungsumgebung.png)
 # Setup - Konfiguration
 *weiterführende Informationen in den jeweiligen READMEs der Ordner*
 
