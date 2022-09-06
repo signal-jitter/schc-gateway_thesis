@@ -1,6 +1,6 @@
-LoRaWAN Netzwerserver
+LoRaWAN Netzwerkserver
 ===================
-Verwendet wurde der opensource LoRaWAN Netzwerk und Applikations-Server von Petr Gotthard\
+Verwendet wurde der Open-Source LoRaWAN-Netzwerk und Applikations-Server von Petr Gotthard\
 https://github.com/gotthardp/lorawan-server
 
 
@@ -14,10 +14,10 @@ Der LNS muss an das gewünschte Szenario angepasst werden.
 
 
 # Backend
-Das Backend des Servers ist die Schnittstelle zu dem SCHC Gateway.
+Das Backend des Servers ist die Schnittstelle zu dem SCHC-Gateway.
 Hier wurden eigene Handler und Connectoren erstellt.
 
-Der Handler verarbeitet die Uplinks/ Downlink und berietet diese in eine gewünschte Form auf.
+Der Handler verarbeitet die Uplinks/ Downlinks und berietet diese in eine gewünschte Form auf.
 
 **Meine Uplink Parser Funktion geschrieben in Erlang**
 ```
@@ -35,18 +35,12 @@ URI              = https://localhost:51225
 Publish Uplinks  = /ul
 ```
 
-Der Handler bildet auch die REST API ab, mit welcher Downlink an den LNS gesendet werden können:
+Der Handler bildet auch die REST-API ab, mit welcher Downlink an den LNS gesendet werden können:
 ```
 Format          = JSON
 URI             = http:
 Received Topic  = /in/{devaddr}
 ```
-
-
-
-
-
-
 
 
 

@@ -714,9 +714,18 @@ class Decompressor:
             print(int_ip)
             hex_ip = hex(int_ip)
             hex_ip = hex_ip[2:]
-            bin_ip = binascii.unhexlify(hex_ip)
-            print(bin_ip)
-            val = bin_ip
+            try:
+                bin_ip = binascii.unhexlify(hex_ip)
+                print(bin_ip)
+                val = bin_ip
+            except:
+                print("ODD-String-Problem-Fixer...")
+                print(int_ip)
+                hex_ip = hex_ip.zfill(len(hex_ip)+1)
+                print(int_ip)
+                bin_ip = binascii.unhexlify(hex_ip)
+                print(bin_ip)
+                val = bin_ip
         else:
             print("NO WHY ??")
             val = in_bbuf.get_bits(size)
