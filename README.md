@@ -53,7 +53,8 @@ Um die Anforderungen dieses Projektes zu erfüllen, wurde es angepasst und verä
 - Fix von Fehlfunktionen (entstanden durch Python Versionsportierung)
 - usw.
 
-*(eine genaue Erläuterung aller Anpassungen befindet sich in der Dokumentation)*
+__(eine genaue Erläuterung aller Anpassungen befindet sich [HIER](SCHC-Backend-Gateway/modifizierungen.md) und in der Dokumentation)__
+
 
 ### Server
 LNS und Gateway laufen gemeinsam auf einem V-Server bei IONOS.

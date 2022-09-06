@@ -1,3 +1,9 @@
+'''
+<2022><HBRS - Sören Seeger>
+Generates the correct IP address of a LoRa node for passed values (Prefix, SessionKey, EUI).
+can be integrated into a process in an object-oriented manner
+'''
+
 from Cryptodome.Hash import CMAC as cmac
 from Cryptodome.Cipher import AES
 

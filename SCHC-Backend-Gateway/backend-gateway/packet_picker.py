@@ -1,3 +1,10 @@
+'''
+<2022><HBRS - Sören Seeger>
+Modifications:
+Troubleshooting in the delivery of the packages.
+Initial part was cut off. Wrong transmission of raw_packet variables. (cf. 40 ff.)
+'''
+
 #!/usr/bin/env python
 
 import sys

@@ -13,6 +13,8 @@ Aufbauend auf dem OpenSCHC-Projekt biete es:
 - IP-Paket Generierung für ausgehende Pakete
 - Bugfixing
 
+__Modifizierungen in dem Quellcode werden __[HIER](SCHC-Backend-Gateway/modifizierungen.md)__ und in den Dokumentenköpfen im Source-Code beschrieben__
+
 # Translate/ Routing Flow
 der von mir ermittelte Programmfluss des SCHC-Gateways:
 

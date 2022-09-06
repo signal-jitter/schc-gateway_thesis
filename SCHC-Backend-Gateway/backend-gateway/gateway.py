@@ -1,3 +1,12 @@
+'''
+<2022><HBRS - Sören Seeger>
+Modifications:
+Json fix (see e.g. 73, 99)
+RulePort transfer + handling (cf. 110 ff.)
+WAN router integration (cf. 251 ff., 257)
+Interface transfers at program call (cf. 207)
+'''
+
 #!/usr/bin/env python
 
 import argparse

@@ -1,3 +1,20 @@
+'''
+<2022><HBRS - Sören Seeger>
+Modifications:
+Implementation of the separate RuleID to send over the LoRaWAN FPort.
+Rule port transfers at different points (calculation, pass, return) (cf. 208, 213, 248, 258 ff.)
+
+Attach RuleID to packet in front in case of fragmentation (cf. 269 ff.)
+
+RuleID built into Recv. method (cf. 274 ff.)
+
+Self-implemented rule finder built into Decompression (FindRuleFromID) (cf. 315 ff.)
+
+Payload recover after decompression from the remaining SCHC buffer (cf. 344 ff.)
+
+'''
+
+
 """
 .. module:: schc
    :platform: Python, Micropython

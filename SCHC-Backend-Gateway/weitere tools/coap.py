@@ -1,3 +1,8 @@
+'''
+<2022><HBRS - Sören Seeger>
+Test-CoAP-Client
+'''
+
 from coapthon.client.helperclient import HelperClient
 
 host = "2a05:d014:faa:5500:6ff9:8389:cf03:f3c1"

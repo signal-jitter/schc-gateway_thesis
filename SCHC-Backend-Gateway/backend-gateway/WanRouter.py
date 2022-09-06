@@ -1,3 +1,13 @@
+'''
+<2022><HBRS - Sören Seeger>
+
+--completely newly implemented class--
+
+The WAN router is integrated into the main program and automatically launches packet sniffers at the network interface for all LoRa node IPs.
+These are automatically loaded from the configuration file.
+When the main program is terminated, it is ensured that these sub-processes are also terminated.
+'''
+
 import sys
 import json
 from subprocess import Popen

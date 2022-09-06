@@ -1,3 +1,13 @@
+'''
+<2022><HBRS - Sören Seeger>
+Modifications:
+New implementation of a rule finder method
+FindRuleFromID (cf. 1140 ff.)
+Was not present - finds a rule for a fixed rule ID (from FPort).
+'''
+
+
+
 """
 The Rule Manager manages the context(s) for a specific device or a set of devices.
 It maintains the context database and ensures its consistency. The hierarchy is the

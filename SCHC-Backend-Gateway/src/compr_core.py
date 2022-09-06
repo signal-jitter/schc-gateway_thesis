@@ -2,6 +2,12 @@
 .. module:: compr_core
    :platform: Python, Micropython
 """
+'''
+<2022><HBRS - Sören Seeger>
+Modifications:
+RuleID not in package but as separate parameter (cf. 580 ff.)
+IP address conversion to correct hex format (incl. problem handling for odd strings) (cf. 717 ff.)
+'''
 import binascii
 
 

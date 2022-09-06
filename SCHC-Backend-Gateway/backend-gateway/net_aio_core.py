@@ -1,3 +1,15 @@
+'''
+<2022><HBRS - Sören Seeger>
+Modifications:
+Adding the payload support.
+Payload as a transfer parameter. (cf. 64 ff.)
+Scapy Imelemntation for sending complete IPv6 packets over the OS interface to the Internet (cf. 85 ff.).
+Implement the RulePort as a parameter for the RuleID across the architecture. (cf. 190, 195 ff.)
+JSON adaptation in the downlink in send_paked/post_data (cf. 202- 217 ) for the format promoted by the LNS.
+Building the structure in _do_post_data (cf. 234 ff.)
+Implementation of an HTTP client sesssion for sending HTT mail with authentication. (cf. 244 ff.)
+'''
+
 import asyncio
 import json
 
