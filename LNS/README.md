@@ -47,5 +47,5 @@ Received Topic  = /in/{devaddr}
 \
 \
 Der LNS zeigt in einem GUI die Ein-/ Ausgehenden Pakete:
-![](Dashboard des LNS.png)
+![](Dashboard-des-LNS.png)
 
